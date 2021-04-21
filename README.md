@@ -1,8 +1,27 @@
+<a href="https://lacework.com"><img src="https://techally-content.s3-us-west-1.amazonaws.com/public-content/lacework_logo_full.png" width="600"></a>
+
+# terraform-lacework-alerts-to-aws-s3
+
+[![GitHub release](https://img.shields.io/github/release/lacework/terraform-lacework-alerts-to-aws-s3.svg)](https://github.com/lacework/terraform-lacework-alerts-to-aws-s3/releases/)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/lacework/terraform-modules%2Ftest-compatibility?type=cf-1&key=eyJhbGciOiJIUzI1NiJ9.NWVmNTAxOGU4Y2FjOGQzYTkxYjg3ZDEx.RJ3DEzWmBXrJX7m38iExJ_ntGv4_Ip8VTa-an8gBwBo)]( https://g.codefresh.io/pipelines/edit/new/builds?id=607e25e6728f5a6fba30431b&pipeline=test-compatibility&projects=terraform-modules&projectId=607db54b728f5a5f8930405d)
+
+A Terraform Module to pipe alerts from Lacework via AWS Eventbridge to an AWS S3 bucket with Lacework.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|----------|
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+
 # Lacework S3 alert channel
 
 ## What does this do?
 
-Creates resources in AWS and Lacework to pipe alerts from Lacework via AWS Eventbridge to AWS S3 bucket.
+Creates resources in AWS and Lacework to pipe alerts from Lacework via AWS Eventbridge to an AWS S3 bucket.
 
 The flows goes as so:
 
