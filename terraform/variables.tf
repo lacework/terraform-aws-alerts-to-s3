@@ -38,6 +38,6 @@ variable "lacework_profile" {
 
 variable "lacework_eventbridge_alert_channel_name" {
   type = string
-  default = "All events to AWS event-bus"
+  default = "Alerts to AWS S3 via EventBridge"
 }
 
