@@ -48,7 +48,7 @@ The terraform module will create the following in your AWS account
 ## Terraform install
 
 ### Prequisites
-Install the Lacework CLI and configure an API key. Install the AWS CLI.
+[Install the Lacework CLI](https://docs.lacework.com/cli#installation), [create an API Key](https://docs.lacework.com/cli#create-api-key) and [configure the CLI with the API key](https://docs.lacework.com/cli#configure-the-cli). [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and configure a profile.
 
 1. Clone the repo
 2. `cd terraform`
