@@ -1,6 +1,9 @@
 # Local .terraform directories
 **/.terraform/*
 
+# don't commit the lock file
+terraform/.terraform.lock.hcl
+
 # generated via "make ci"
 examples/**/.terraform.lock.hcl
 
