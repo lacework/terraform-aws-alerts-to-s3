@@ -11,11 +11,19 @@ A Terraform Module to pipe alerts from Lacework via AWS Eventbridge to an AWS S3
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|----------|
+| aws_profile | The AWS CLI profile to use to authenticate with AWS | String | none | Yes |
+| aws_region | The AWS region to create the resources in | String | none | Yes |
+| aws_s3_bucket_name | The name of the S3 bucket to be created | String | none | Yes |
+| aws_eventbridge_event_bus_name | The name of the AWS EventBridge to be created | String | Lacework_Alerts_Event_Bus | No |
+| aws_eventbridge_event_rule_name | The name of the AWS EventBridge rule to be created | String | Lacework_Alerts_Event_Rule | No |
+| aws_sqs_queue_name | The name of the SQS queue to be created | String | Lacework_Alerts_SQS_Queue_Name | No |
+| lacework_profile | The Lacework CLI profile to be used to authenticate with Lacework | String | default | No |
+| lacework_eventbridge_alert_channel_name | The name of the Lacework alert channel to be created | String | Alerts to AWS S3 via EventBridge | No |
+
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
+This module has no outputs
 
 ## What does this do?
 
