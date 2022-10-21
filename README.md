@@ -17,8 +17,6 @@ A Terraform Module to pipe alerts from Lacework via AWS Eventbridge to an AWS S3
 | Name | Description |
 |------|-------------|
 
-# Lacework S3 alert channel
-
 ## What does this do?
 
 Creates resources in AWS and Lacework to pipe alerts from Lacework via AWS Eventbridge to an AWS S3 bucket.
