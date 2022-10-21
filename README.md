@@ -43,7 +43,7 @@ The terraform module will create the following in your AWS account
 6. AWS S3 bucket to store the Alert JSON
 7. Lacework event bridge alert channel
 
-NOTE: You still need to attach a Lacework alert rule to the alert channel to route alerts to the channel.
+**NOTE: You still need to attach a Lacework [alert rule](https://docs.lacework.com/console/alert-rules) to the alert channel to route alerts to the channel.**
 
 ## Terraform install
 
