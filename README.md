@@ -95,7 +95,7 @@ No outputs.
 ## Manual install
 
 1. Create an [event bridge integration](https://docs.lacework.com/amazon-event-bridge#create-resources-within-your-aws-account)
-2. Create a new Lambda function based on the `hello-world` blueprint. Copy the code from `index.js` into the new function
+2. Create a new Lambda function based on the `hello-world` blueprint. Copy the code from [index.js](https://raw.githubusercontent.com/lacework/terraform-lacework-alerts-to-aws-s3/main/index.js) into the new function
 3. Edit the SQS Access Policy to enable the Lambda execution role to access it
 
 ```
