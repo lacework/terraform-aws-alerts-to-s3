@@ -27,6 +27,9 @@ The terraform module will create the following in your AWS account
 
 **NOTE: You still need to attach a Lacework [alert rule](https://docs.lacework.com/console/alert-rules) to the alert channel to route alerts to the channel.**
 
+### Prequisites
+[Install the Lacework CLI](https://docs.lacework.com/cli#installation), [create an API Key](https://docs.lacework.com/cli#create-api-key) and [configure the CLI with the API key](https://docs.lacework.com/cli#configure-the-cli). [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and configure a profile.
+
 ## Requirements
 
 | Name | Version |
@@ -81,16 +84,6 @@ No modules.
 ## Outputs
 
 No outputs.
-
-## Terraform install
-
-### Prequisites
-[Install the Lacework CLI](https://docs.lacework.com/cli#installation), [create an API Key](https://docs.lacework.com/cli#create-api-key) and [configure the CLI with the API key](https://docs.lacework.com/cli#configure-the-cli). [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and configure a profile.
-
-1. Clone the repo
-2. `cd terraform`
-3. `terraform init`
-4. `terraform plan/apply`
 
 ## Manual install
 
