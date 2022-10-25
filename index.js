@@ -1,17 +1,16 @@
 const AWS = require('aws-sdk');
 const S3 = new AWS.S3({region: process.env.AWS_REGION, apiVersion: '2012-10-17'});
 
-exports.handler = async (event, context) => {
-    console.log('Received event:', JSON.stringify(event, null, 2));
-    
+exports.handler = async (event) => {
     if(event.Records.length > 0) {
         for(let record in event.Records) {
             let jsonOutput = event.Records[record].body;
-            console.log('the record is: ', jsonOutput);
             
+            const eventId = JSON.parse(jsonOutput).detail.EVENT_ID;
+            console.log('Received event from Lacework with ID: ', eventId);
+
             // call the function to write the data to the S3 bucket
-            const result = await putObjectS3(JSON.stringify(jsonOutput), JSON.parse(jsonOutput).detail.EVENT_ID);
-            console.log(result);
+            const result = await putObjectS3(JSON.stringify(jsonOutput), eventId);
             return result;
         }
     }
@@ -32,9 +31,9 @@ const putObjectS3 = (data, nameOfFile) => {
           reject(err);
       }
       if(result) {
-          console.log("Put to s3 should have worked: " + data); // successful response
+          console.log("Put to s3 completed"); // successful response
           resolve(result);
       }
     });
-  })
+  });
 }
