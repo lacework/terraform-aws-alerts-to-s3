@@ -13,7 +13,7 @@ source scripts/release_helpers.sh
 
 # Required Variables
 readonly org_name=lacework
-readonly project_name=terraform-lacework-alerts-to-aws-s3
+readonly project_name=terraform-aws-alerts-to-s3
 readonly git_user="Lacework Inc."
 readonly git_email="tech-ally@lacework.net"
 readonly required_files_for_release=(

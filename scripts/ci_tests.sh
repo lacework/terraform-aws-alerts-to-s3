@@ -6,7 +6,7 @@
 #
 set -eou pipefail
 
-readonly project_name=terraform-lacework-alerts-to-aws-s3
+readonly project_name=terraform-aws-alerts-to-s3
 
 TEST_CASES=(
   examples/default

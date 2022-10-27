@@ -1,8 +1,8 @@
 <a href="https://lacework.com"><img src="https://techally-content.s3-us-west-1.amazonaws.com/public-content/lacework_logo_full.png" width="600"></a>
 
-# terraform-lacework-alerts-to-aws-s3
+# terraform-aws-alerts-to-s3
 
-[![GitHub release](https://img.shields.io/github/release/lacework/terraform-lacework-alerts-to-aws-s3.svg)](https://github.com/lacework/terraform-lacework-alerts-to-aws-s3/releases/)
+[![GitHub release](https://img.shields.io/github/release/lacework/terraform-aws-alerts-to-s3.svg)](https://github.com/lacework/terraform-aws-alerts-to-s3/releases/)
 [![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/lacework/terraform-modules%2Ftest-compatibility?type=cf-1&key=eyJhbGciOiJIUzI1NiJ9.NWVmNTAxOGU4Y2FjOGQzYTkxYjg3ZDEx.RJ3DEzWmBXrJX7m38iExJ_ntGv4_Ip8VTa-an8gBwBo)]( https://g.codefresh.io/pipelines/edit/new/builds?id=607e25e6728f5a6fba30431b&pipeline=test-compatibility&projects=terraform-modules&projectId=607db54b728f5a5f8930405d)
 
 A Terraform Module to pipe alerts from Lacework via AWS Eventbridge to an AWS S3 bucket with Lacework.
@@ -88,7 +88,7 @@ No outputs.
 ## Manual install
 
 1. Create an [event bridge integration](https://docs.lacework.com/amazon-event-bridge#create-resources-within-your-aws-account)
-2. Create a new Lambda function based on the `hello-world` blueprint. Copy the code from [index.js](https://raw.githubusercontent.com/lacework/terraform-lacework-alerts-to-aws-s3/main/index.js) into the new function
+2. Create a new Lambda function based on the `hello-world` blueprint. Copy the code from [index.js](https://raw.githubusercontent.com/lacework/terraform-aws-alerts-to-s3/main/index.js) into the new function
 3. Edit the SQS Access Policy to enable the Lambda execution role to access it
 
 ```
