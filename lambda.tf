@@ -1,7 +1,7 @@
 resource "aws_lambda_function" "lacework_sqs_to_s3" {
   # If the file is not in the current working directory you will need to include a 
   # path.module in the filename.
-  filename      = "${path.module}/../lambda.zip"
+  filename      = "${path.module}/lambda.zip"
   function_name = "lacework_sqs_to_s3"
   role          = aws_iam_role.lacework_alerts_lambda_execution_role.arn
   handler       = "index.handler"
