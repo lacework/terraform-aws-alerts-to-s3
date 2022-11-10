@@ -27,7 +27,7 @@ The terraform module will create the following in your AWS account
 
 **NOTE: You still need to attach a Lacework [alert rule](https://docs.lacework.com/console/alert-rules) to the alert channel to route alerts to the channel.**
 
-### Prequisites
+## Prequisites
 [Install the Lacework CLI](https://docs.lacework.com/cli#installation), [create an API Key](https://docs.lacework.com/cli#create-api-key) and [configure the CLI with the API key](https://docs.lacework.com/cli#configure-the-cli). [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and configure a profile.
 
 ## Requirements
@@ -41,8 +41,8 @@ The terraform module will create the following in your AWS account
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.75.2 |
-| <a name="provider_lacework"></a> [lacework](#provider\_lacework) | 0.20.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.0 |
+| <a name="provider_lacework"></a> [lacework](#provider\_lacework) | ~> 0.20.0 |
 
 ## Modules
 
@@ -74,8 +74,6 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_eventbridge_event_bus_name"></a> [aws\_eventbridge\_event\_bus\_name](#input\_aws\_eventbridge\_event\_bus\_name) | The name of the AWS EventBridge to be created | `string` | `"Lacework_Alerts_Event_Bus"` | no |
 | <a name="input_aws_eventbridge_event_rule_name"></a> [aws\_eventbridge\_event\_rule\_name](#input\_aws\_eventbridge\_event\_rule\_name) | The name of the AWS EventBridge rule to be created | `string` | `"Lacework_Alerts_Event_Rule"` | no |
-| <a name="input_aws_profile"></a> [aws\_profile](#input\_aws\_profile) | The AWS CLI profile to use to authenticate with AWS | `string` | n/a | yes |
-| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | The AWS region to create the resources in | `string` | n/a | yes |
 | <a name="input_aws_s3_bucket_name"></a> [aws\_s3\_bucket\_name](#input\_aws\_s3\_bucket\_name) | The name of the S3 bucket to be created | `string` | n/a | yes |
 | <a name="input_aws_sqs_queue_name"></a> [aws\_sqs\_queue\_name](#input\_aws\_sqs\_queue\_name) | The name of the SQS queue to be created | `string` | `"Lacework_Alerts_SQS_Queue_Name"` | no |
 | <a name="input_lacework_eventbridge_alert_channel_name"></a> [lacework\_eventbridge\_alert\_channel\_name](#input\_lacework\_eventbridge\_alert\_channel\_name) | The name of the Lacework alert channel to be created | `string` | `"Alerts to AWS S3 via EventBridge"` | no |
