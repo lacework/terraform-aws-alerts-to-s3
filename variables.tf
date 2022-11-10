@@ -1,16 +1,6 @@
 ###################################
 # AWS variables
 ###################################
-variable "aws_profile" {
-  type = string
-  description = "The AWS CLI profile to use to authenticate with AWS"
-}
-
-variable "aws_region" {
-  type = string
-  description = "The AWS region to create the resources in"
-}
-
 variable "aws_eventbridge_event_bus_name" {
   type = string
   default = "Lacework_Alerts_Event_Bus"
