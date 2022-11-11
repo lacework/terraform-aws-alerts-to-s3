@@ -35,14 +35,14 @@ The terraform module will create the following in your AWS account
 | Name | Version |
 |------|---------|
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.0 |
-| <a name="requirement_lacework"></a> [lacework](#requirement\_lacework) | ~> 0.20.0 |
+| <a name="requirement_lacework"></a> [lacework](#requirement\_lacework) | ~> 1.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.0 |
-| <a name="provider_lacework"></a> [lacework](#provider\_lacework) | ~> 0.20.0 |
+| <a name="provider_lacework"></a> [lacework](#provider\_lacework) | ~> 1.0 |
 
 ## Modules
 
