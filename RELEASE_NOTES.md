@@ -1,7 +1,7 @@
 # Release Notes
-Another day, another release. These are the release notes for the version `v0.3.1`.
+Another day, another release. These are the release notes for the version `v0.4.0`.
 
-## Bug Fixes
-* fix: s3 bucket ownership controls (#5) (djmctavish)([3c12b94](https://github.com/lacework/terraform-aws-alerts-to-s3/commit/3c12b94099ff3e65dae8e3c375b2c1a01e4ed6c5))
+## Features
+* feat: Add support for AWS provider 5.0 (#8) (Darren)([3c21628](https://github.com/lacework/terraform-aws-alerts-to-s3/commit/3c21628596b031f96bfcbd4c09bc010be1ce9cab))
 ## Other Changes
-* ci: version bump to v0.3.1-dev (Lacework)([1467053](https://github.com/lacework/terraform-aws-alerts-to-s3/commit/14670536d0f47fd1c2c106c113d2453f178eb9f5))
+* ci: version bump to v0.3.2-dev (Lacework)([69fbe9e](https://github.com/lacework/terraform-aws-alerts-to-s3/commit/69fbe9edaddbb82e50318797779e90f008789166))
