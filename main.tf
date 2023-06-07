@@ -152,6 +152,14 @@ resource "aws_s3_bucket" "lacework_alerts_bucket" {
   bucket = var.aws_s3_bucket_name
 }
 
+resource "aws_s3_bucket_public_access_block" "alerts_bucket_access" {
+  bucket                  = aws_s3_bucket.lacework_alerts_bucket.id
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
+
 resource "aws_s3_bucket_ownership_controls" "alerts_bucket_ownership_controls" {
   bucket = aws_s3_bucket.lacework_alerts_bucket.id
 
@@ -163,6 +171,10 @@ resource "aws_s3_bucket_ownership_controls" "alerts_bucket_ownership_controls" {
 resource "aws_s3_bucket_acl" "example" {
   bucket = aws_s3_bucket.lacework_alerts_bucket.id
   acl    = "private"
+  depends_on = [
+    aws_s3_bucket_public_access_block.alerts_bucket_access,
+    aws_s3_bucket_ownership_controls.alerts_bucket_ownership_controls
+  ]
 }
 
 # AWS SQS
